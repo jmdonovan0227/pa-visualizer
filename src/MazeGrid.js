@@ -8,8 +8,8 @@ function MazeGrid() {
   const [height, setHeight] = useState(20);
   const [inputWidth, setInputWidth] = useState(0);
   const [inputHeight, setInputHeight] = useState(0);
-  const navSound = useMemo(() => new Audio('/click.mp3'), []);
-  const winSound = useMemo(() => new Audio('/maze_solved.mp3'), []);
+  const navSound = useMemo(() => new Audio(`${process.env.PUBLIC_URL}/click.mp3`), []);
+  const winSound = useMemo(() => new Audio(`${process.env.PUBLIC_URL}/maze_solved.mp3`), []);
 
   useEffect(() => {
     navSound.pause();
