@@ -1,0 +1,124 @@
+body, html, #root {
+  height: 100%;
+  margin: 0; 
+  padding: 0;
+}
+
+.maze-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header-style {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.maze {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.enter-maze-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 35%;
+  width: 100%;
+}
+
+.enter-maze-info p {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.enter-maze-info .rows {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.labels {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.inputs {
+  min-width: 25%;
+  max-width: 50%;
+}
+
+.generate-maze {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#width {
+  margin-left: 4px;
+}
+
+.maze-button {
+  max-height: 100%;
+  background-color: rgb(42, 42, 245);
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.maze-button button:hover {
+  background-color:  rgb(173, 173, 252);
+}
+
+.cell {
+  width: calc(min(55vw / var(--width), 55vh / var(--height)));
+  height: calc(min(55vw / var(--width), 55vh / var(--height)));
+  border: 1px solid white;
+}
+
+.cell.wall {
+  background-color: black;
+}
+
+.cell.path {
+  background-color: white;
+}
+
+.cell.start {
+  background-color: green;
+}
+
+.cell.end {
+  background-color: red;
+}
+
+.cell.visited {
+  background-color: rgb(149, 149, 255);
+}
