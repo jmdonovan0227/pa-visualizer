@@ -1,6 +1,6 @@
 {
   "name": "pathfinding-algorithm-visualizer",
-  "homepage": "https://jmdonovan0227.github.io/pa-visualizer",
+  "homepage": "https://jmdonovan0227.github.io/mpfinder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
